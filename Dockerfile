@@ -1,5 +1,5 @@
 # 使用するベースイメージ
-FROM almalinux:latest
+FROM almalinux:8
 
 # 必要なパッケージのインストール
 RUN dnf -y install openssh-server sudo && \
