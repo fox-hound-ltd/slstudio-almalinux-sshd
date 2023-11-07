@@ -1,8 +1,10 @@
 # 使用するベースイメージ
 FROM almalinux:8
 
+SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+
 # 必要なパッケージのインストール
-RUN dnf -y install openssh-server sudo && \
+RUN dnf -y install openssh-server-8.0p1-19.el8_8 sudo-1.8.29-10.el8 && \
   dnf clean all
 
 # SSH接続用のユーザーを作成
