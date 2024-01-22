@@ -1,5 +1,5 @@
 # 使用するベースイメージ
-FROM almalinux:8
+FROM almalinux:9
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
